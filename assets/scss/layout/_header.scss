@@ -1,0 +1,98 @@
+header{
+  margin: 40px 0 16px;
+}
+@media (max-width:1200px){
+  header{
+    margin: 0;
+  }
+}
+header .container{
+  border-radius: 100px;
+  box-shadow: 0px 2px 40px rgb(#0068FF,0.1);
+  padding: 16px 40px;
+}
+@media (max-width:1200px){
+  header .container{
+    border-radius: 0;
+    box-shadow:unset;
+    padding: 12px;
+  }
+}
+.mylogo{
+  width: 157px;
+}
+@media (max-width:575px) {
+  .mylogo{
+    width: 125px;
+  }
+}
+header .col{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header .form-control{
+  padding: 22px 40px;
+  border-radius: 16px;
+  width: 425px;
+}
+.search{
+  position: absolute;
+  left: 11px;
+}
+.search-btn{
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  bottom: 8px;
+  
+}
+.btn.login-btn,
+.btn.search-btn{
+  border-radius: 12px;
+}
+header .form-select{
+  white-space:nowrap;
+  
+}
+.menu,
+.head-icon{
+  padding: 8px 12px;
+  margin: 8px 16px;
+  cursor: pointer;
+}
+@media (max-width:575px) {
+  .menu,
+  .head-icon{
+    padding: 8px 12px;
+    margin: 0;
+    cursor: pointer;
+  }
+}
+.btn.login-btn{
+  padding: 16px 32px;
+}
+.marker{
+  min-width: 8px;
+  min-height: 8px;
+  background: #0068FF;
+  border-radius: 16px;
+  position: absolute;
+  right: 4px;
+  top: 0;
+  
+}
+.marker-num{
+  padding: 0 5px;
+  font-size: 12px;
+  color: #FFF;
+}
+
+header .dropdown-menu{
+  top: auto !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+header .dropdown{
+  position: relative;
+}
