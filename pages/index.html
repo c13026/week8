@@ -232,6 +232,7 @@
                   slidesPerView: 1,
                   grid: {
                     rows: 1,
+                    fill: 'row',
                   }
                 },
                 767: {
@@ -239,6 +240,7 @@
                   slidesPerView: 1,
                   grid: {
                     rows: 1,
+                    fill: 'row',
                   }
                 },
                 768: {
@@ -246,6 +248,7 @@
                   slidesPerView: 2,
                   grid: {
                     rows: 2,
+                    fill: 'row',
                   }
                 },
                 911: {
@@ -253,6 +256,7 @@
                   slidesPerView: 2,
                   grid: {
                     rows: 2,
+                    fill: 'row',
                   }
                 },
               },
@@ -270,12 +274,11 @@
         </div>
       </div>
     </div>
-    <div class="section3" style="background: 40% 14% / 3% no-repeat url(../assets/images/deco/flower-1.png),
-    -12.5% 30% / 20% no-repeat url(../assets/images/deco/flower-3.png),
+    <div class="section3" style="background:-12.5% 50% / 20% no-repeat url(../assets/images/deco/flower-3.png),
     linear-gradient(180deg, #F0F6FF, #FFFFFF);">
       <div class="container">
-        <div class="text-center">
-          <h1>看看大家都買了什麼</h1>
+        <div class="textbox" style="background-image: url(../assets/images/deco/flower-1.png)">
+          <h1>看看大家<br class="d-sm-none">都買了什麼</h1>
           <p>熱銷課程一次看！✨</p>
         </div>
         <div class="swiper mySwiper2">
@@ -302,7 +305,8 @@
                     <span class="tag">中文創作</span><span>已有 420 位同學加入</span>
                   </div>
                   <div class="evaluatebox">
-                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span class="evaluate-num">(333)</span>
+                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                      class="evaluate-num">(333)</span>
                   </div>
                 </div>
               </div>
@@ -329,7 +333,8 @@
                     <span class="tag">程式開發</span><span>已有 420 位同學加入</span>
                   </div>
                   <div class="evaluatebox">
-                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span class="evaluate-num">(333)</span>
+                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                      class="evaluate-num">(333)</span>
                   </div>
                 </div>
               </div>
@@ -356,10 +361,12 @@
                     <span class="tag">程式開發</span><span>已有 420 位同學加入</span>
                   </div>
                   <div class="evaluatebox">
-                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span class="evaluate-num">(333)</span>
+                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                      class="evaluate-num">(333)</span>
                   </div>
                 </div>
               </div>
+
             </div>
             <div class="swiper-slide">
               <div class="card">
@@ -382,7 +389,8 @@
                     <span class="tag">程式開發</span><span>已有 420 位同學加入</span>
                   </div>
                   <div class="evaluatebox">
-                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span class="evaluate-num">(333)</span>
+                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                      class="evaluate-num">(333)</span>
                   </div>
                 </div>
               </div>
@@ -408,7 +416,8 @@
                     <span class="tag">程式開發</span><span>已有 420 位同學加入</span>
                   </div>
                   <div class="evaluatebox">
-                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span class="evaluate-num">(333)</span>
+                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                      class="evaluate-num">(333)</span>
                   </div>
                 </div>
               </div>
@@ -422,10 +431,10 @@
             <span class="material-symbols-outlined">arrow_back</span>
           </div>
         </div>
-      
+
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      
+
         <!-- Initialize Swiper -->
         <script>
           var swiper = new Swiper(".mySwiper2", {
@@ -436,15 +445,244 @@
                 slidesPerView: 2,
                 spaceBetween: 40,
               },
-              1200: {
-                navigation: {
-                nextEl: ".swiper-next2",
-                prevEl: ".swiper-prev2",
+              991: {
+                slidesPerView: 3,
+                spaceBetween: 40,
               },
+              1400: {
+                navigation: {
+                  nextEl: ".swiper-next2",
+                  prevEl: ".swiper-prev2",
+                },
                 slidesPerView: 4,
                 spaceBetween: 40,
               }
             },
+          });
+        </script>
+      </div>
+    </div>
+    <div class="section4">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-12 col-xl-6">
+            <div class="swiper mySwiper3">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div style="background-color: #FF994F;"><img class="img-fluid"
+                        src="../assets/images/icons/megaphoneSimple.png" alt=""></div>
+                    <div class="d-flex flex-column justify-content-between">
+                      <div>網路行銷</div>
+                      <div>342 門課程</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div style="background-color: #5E5E5E;"><img class="img-fluid"
+                        src="../assets/images/icons/camera.png" alt=""></div>
+                    <div class="d-flex flex-column justify-content-between">
+                      <div>拍攝剪輯</div>
+                      <div>563 門課程</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div style="background-color: #FF9BAD;"><img class="img-fluid"
+                        src="../assets/images/icons/chartBarHorizontal.png" alt=""></div>
+                    <div class="d-flex flex-column justify-content-between">
+                      <div>自我成長</div>
+                      <div>490 門課程</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div style="background-color: #564FFD;"><img class="img-fluid"
+                        src="../assets/images/icons/penNib.png" alt=""></div>
+                    <div class="d-flex flex-column justify-content-between">
+                      <div>藝術設計</div>
+                      <div>230 門課程</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div style="background-color: #54DFF2;"><img class="img-fluid"
+                        src="../assets/images/icons/bugDroid.png" alt=""></div>
+                    <div class="d-flex flex-column justify-content-between">
+                      <div>數據分析</div>
+                      <div>395 門課程</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div style="background-color: #52E9BC;"><img class="img-fluid"
+                        src="../assets/images/icons/creditCard.png" alt=""></div>
+                    <div class="d-flex flex-column justify-content-between">
+                      <div>投資理財</div>
+                      <div>486 門課程</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div style="background-color: #CF93FF;"><img class="img-fluid"
+                        src="../assets/images/icons/headphones.png" alt=""></div>
+                    <div class="d-flex flex-column justify-content-between">
+                      <div>音樂創作</div>
+                      <div>283 門課程</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div style="background-color: #0068FF;padding: 20px;"><img class="img-fluid"
+                        src="../assets/images/icons/arrow.png" alt=""></div>
+                    <div class="d-flex flex-column justify-content-center">
+                      <div>探索更多</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          <script>
+            var swiper = new Swiper(".mySwiper3", {
+
+              slidesPerView: 1,
+              grid: {
+                rows: 2,
+                fill: 'row',
+              },
+              spaceBetween: 30,
+              breakpoints: {
+                567: {
+                  slidesPerView: 2,
+                  grid: {
+                    rows: 2,
+                    fill: 'row',
+                  },
+                },
+                768: {
+                  slidesPerView: 2,
+                  grid: {
+                    rows: 4,
+                    fill: 'row',
+                  },
+                },
+              },
+            });
+          </script>
+          <div class="col-12 col-xl-5" style="margin-bottom: 16px;">
+            <div><img src="../assets/images/deco/polygon-1.png" alt=""></div>
+            <div>
+              <h1>想學什麼嗎？<br>一探究竟。</h1>
+              <img class="img-fluid" src="../assets/images/deco/line-2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section5" style="background-image: url(../assets/images/deco/line-1.png);">
+      <div class="container">
+        <div class="textbox" style="background-image: url(../assets/images/deco/flower-1.png)">
+          <h1>頂尖講師<br class="d-sm-none">帶你飛</h1>
+          <p>超真實學員評價，這些講師你絕對不能錯過！</p><br>
+        </div>
+        <div class="swiper mySwiper4">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card-box">
+                <div class="card card-img" style="background-image: url(../assets/images/teacher-3.png);"></div>
+                <div class="card mycard">
+                  <div class="card-body">
+                    <h6>Mr. Robert </h6>
+                  </div>
+                  <div class="card-body">
+                    <div class="tagbox">
+                      <span class="tag">音樂創作</span><span class="font-icon material-symbols-outlined">star</span><span
+                        class="evaluate">4.0</span><span class="evaluate-num">(333)</span>
+                    </div>
+                    <p>Robert 的線上課程深受學生喜愛。他的教學方法生動有趣，能夠深入淺出地講解複雜的音樂理論，並結合實際演奏技巧，使學生能夠快速進步。</p>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="btn btn-primary">探索 Mr. Robert 的教學課程</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-box">
+                <div class="card card-img" style="background-image: url(../assets/images/teacher-1.png);"></div>
+                <div class="card mycard">
+                  <div class="card-body">
+                    <h6>Kelly Beck</h6>
+                  </div>
+                  <div class="card-body">
+                    <div class="tagbox">
+                      <span class="tag">英文寫作</span><span class="font-icon material-symbols-outlined">star</span><span
+                        class="evaluate">4.8</span><span class="evaluate-num">(281)</span>
+                    </div>
+                    <p>Kelly 的教學方式靈活且富有創意，能夠有效提升學生的寫作技巧和自信心。Kelly 注重實用性，針對學生的需求量身打造教學內容，並提供具體的反饋和建議。</p>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="btn btn-primary">探索 Kelly Beck 的教學課程</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-box">
+                <div class="card card-img" style="background-image: url(../assets/images/teacher-2.png);"></div>
+                <div class="card mycard">
+                  <div class="card-body">
+                    <h6>K. Lee</h6>
+                  </div>
+                  <div class="card-body">
+                    <div class="tagbox">
+                      <span class="tag">音樂創作</span><span class="font-icon material-symbols-outlined">star</span><span
+                        class="evaluate">4.8</span><span class="evaluate-num">(1,245)</span>
+                    </div>
+                    <p>K. Lee 的教學風格親切且耐心，能夠循序漸進地引導學生進入樂團的世界。學生們紛紛表示，K. Lee 的課程讓他們對音樂產生了濃厚的興趣！</p>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="btn btn-primary">探索 K. Lee 的教學課程</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper4", {
+            spaceBetween: 40,
+            breakpoints:{
+              575: {
+              slidesPerView: 1,
+
+            },
+            991: {
+              slidesPerView: 2,
+            },
+            1200:{
+              slidesPerView: 3,
+            },
+            },
+            grabCursor: true,
+            // pagination: {
+            //   el: ".swiper-pagination",
+            //   clickable: true,
+            // },
           });
         </script>
       </div>
