@@ -1,0 +1,280 @@
+.section3 {
+	&.mycourselist1 {
+		padding: 0;
+	}
+}
+.mycourselist1 {
+	.container {
+		padding: 40px 0 48px;
+	}
+}
+.myhr {
+	margin: 0;
+}
+.mycourselist0 {
+	padding-top: 40px;
+	.container {
+		.row {
+			&>.col-12 {
+				a {
+					display: inline-flex;
+					padding: 4px 16px;
+					text-decoration: none;
+					color: $neutral-100;
+					line-height: 50px;
+					align-items: center;
+					justify-content: center;
+					&.action {
+						padding: 4px 16px 0px;
+						color: $pimary-100;
+						display: inline-flex;
+						flex-direction: column;
+						&::after {
+							content: "";
+							width: 32px;
+							height: 4px;
+							border-radius: 10px;
+							display: inline-flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+							background: $pimary-100;
+						}
+					}
+					&:hover {
+						padding: 4px 16px 0px;
+						color: $pimary-100;
+						display: inline-flex;
+						flex-direction: column;
+						&::after {
+							content: "";
+							width: 32px;
+							height: 4px;
+							border-radius: 10px;
+							display: inline-flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+							background: $pimary-100;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.mySwiper5 {
+	width: 100%;
+	overflow: visible;
+	.card {
+		width: 100%;
+		text-align: center;
+		padding: 24px 0;
+		h6 {
+			margin-bottom: 8px;
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+	@media (max-width:767px) {
+		padding: 0 24px;
+	}
+}
+.swiper-pagination5 {
+	text-align: center;
+}
+.mycourselist2 {
+	padding: 5em 12px;
+	background: $neutral-10;
+	.card {
+		margin-bottom: 1.5rem;
+		width: 100%;
+		overflow: hidden;
+	}
+	.container {
+		padding: 0;
+	}
+	.row {
+		&>* {
+			padding-left: 16px;
+			padding-right: 16px;
+		}
+		@media (max-width:1199px) {
+			&>* {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		}
+	}
+	.card-head {
+		height: 220px;
+		background: center/cover no-repeat;
+	}
+	.card-body {
+		padding: 16px;
+		text-align: center;
+		.title {
+			color: $neutral-100;
+			letter-spacing: 2%;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 24px;
+			margin-bottom: 0;
+		}
+		.body14 {
+			color: $neutral-80;
+			letter-spacing: 2%;
+			font-size: 14px;
+			line-height: 21px;
+			margin-bottom: 0;
+		}
+	}
+	.card-foot {
+		border-top: solid 1px $neutral-40;
+		padding: 16px;
+		display: flex;
+		justify-content: space-between;
+	}
+}
+.swiper-prev5.swiper-button-lock.swiper-button-disabled,
+.swiper-next5.swiper-button-lock.swiper-button-disabled {
+	display: block !important;
+	pointer-events: auto;
+}
+.swiper-prev5,
+.swiper-next5 {
+	color: $neutral-60;
+	width: 40px;
+	height: 40px;
+	padding-left: 8px;
+}
+.swiper-prev5:hover,
+.swiper-next5:hover {
+	color: $pimary-100;
+}
+.mycourselist3 {
+	.container {
+		padding: 6em 0;
+	}
+	a {
+		text-decoration: none;
+		padding: 0 1rem;
+		&.page-link {
+			&.action {
+				background: $pimary-100;
+				color: $neutral-0;
+			}
+		}
+	}
+	.d-flex {
+		&.flex-column {
+			&.flex-lg-row {
+				justify-content: space-between;
+				align-items: center;
+				margin-bottom: 2.5em;
+			}
+		}
+	}
+	div {
+		&>a {
+			color: $neutral-80;
+			&.action {
+				color: $pimary-100;
+			}
+		}
+	}
+	.card {
+		margin-bottom: 1.5rem;
+	}
+	.card-head {
+		width: 100%;
+	}
+	.page-item {
+		padding: 0 4px;
+	}
+}
+.mycourselist {
+	width: 100%;
+	overflow-x: hidden;
+	.mybg {
+		&.d-block {
+			height: 246px !important;
+			padding: 2.5em 0;
+			overflow-x: hidden;
+		}
+		&.d-xl-block {
+			height: 370px;
+			padding: 6em 0;
+		}
+	}
+	p {
+		margin: 0;
+	}
+	nav {
+		padding: 0 .75rem;
+	}
+	h1 {
+		padding: 0 .75rem;
+		font-weight: 600;
+		letter-spacing: 2%;
+	}
+	a {
+		text-decoration: none;
+		color: $neutral-80;
+	}
+	.container {
+		overflow: hidden;
+		padding: 0;
+	}
+	.arrow{
+		width: 48px;
+		height: calc(100% - 14px);
+		color: $neutral-80;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background:linear-gradient(90deg, $neutral-0, $pimary-10); 
+	}
+	.choose-course {
+		white-space: nowrap;
+		overflow-x: hidden;
+		margin: 0;
+		width: 100%;
+		@media (max-width:1200px) {
+			overflow-x: scroll;
+		}
+	}
+}
+@media (max-width:767px) {
+	.mycourselist3 {
+		h3 {
+			font-size: 16px;
+		}
+		.card {
+			box-shadow: none;
+			border-radius: 0;
+			border-bottom: 1px solid $neutral-40;
+			margin: 12px auto;
+		}
+		.card-head {
+			width: 100px;
+			height: 78px !important;
+			border-radius: 12px;
+		}
+		.card-body {
+			padding: 8px 0 8px 8px;
+		}
+		.card-foot {
+			padding: 8px 0 8px 8px;
+		}
+		a {
+			&.page-link {
+				padding: 0 9px;
+			}
+		}
+		.container {
+			padding: 0 .75rem;
+		}
+	}
+}

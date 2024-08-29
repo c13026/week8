@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CourseList</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://kit.fontawesome.com/c965374eaf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <div class="mycourselist">
+      <div class="mybg d-none d-xl-block" style="background:  150px 80px / 60px no-repeat url(../assets/images/deco/polygon-2.png),
+calc(100% - 360px) 40px  / 60px no-repeat url(../assets/images/deco/polygon-2.png),
+-10% 50% / 560px no-repeat url(../assets/images/deco/flower-2.png),
+ calc(100% - 24px) 100px / 560px no-repeat url(../assets/images/deco/flower-2.png),
+-12.5% 50% / 20% no-repeat url(../assets/images/deco/flower-2.png),
+    #F9F9F9;">
+        <div class="container d-flex flex-column justify-content-between h-100">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">所有課程</a></li>
+              <li class="breadcrumb-item active" aria-current="page">程式課程</li>
+            </ol>
+          </nav>
+          <h1>程式課程</h1><!-- d-flex text-nowrap -->
+          <div class="d-flex justify-content-between align-items-center overflow-visible">
+            <div class="choose-course ">
+              <label><input type="radio" name="Discount courses" checked><span class="btn btn-primary mybtn action">所有程式</span></label>
+              <label><input type="radio" name="Discount courses"><span class="btn btn-primary mybtn">網頁開發</span></label>
+              <label><input type="radio" name="Discount courses"><span class="btn btn-primary mybtn">資料科學</span></label>
+              <label><input type="radio" name="Discount courses"><span class="btn btn-primary mybtn">遊戲開發</span></label>
+              <label><input type="radio" name="Discount courses"><span class="btn btn-primary mybtn">程式語言</span></label>
+              <label><input type="radio" name="Discount courses"><span class="btn btn-primary mybtn">遊戲開發</span></label>
+              <label><input type="radio" name="Discount courses"><span class="btn btn-primary mybtn">資料庫設計與開發</span></label>
+              <label><input type="radio" name="Discount courses"><span class="btn btn-primary mybtn">軟體測試</span></label>
+              <label><input type="radio" name="Discount courses"><span class="btn btn-primary mybtn">軟體開發工具</span></label>
+              <label><input type="radio" name="Discount courses"><span class="btn btn-primary mybtn">無程式碼開發</span></label>
+              <label><input type="radio" name="Discount courses"><span class="btn btn-primary mybtn">無程式碼開發</span></label>
+            </div>
+            <div class="arrow d-none d-xl-flex">
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mybg d-block d-xl-none" style="background: 16px 40px  / 60px no-repeat url(../assets/images/deco/polygon-2.png),
+ calc(100% + 64px) 0px / 240px no-repeat url(../assets/images/deco/flower-2.png),
+    #F9F9F9;">
+          <div class="container d-flex flex-column justify-content-between h-100 w-100 ">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">所有課程</a></li>
+                <li class="breadcrumb-item active" aria-current="page">程式課程</li>
+              </ol>
+            </nav>
+            <h1>程式課程</h1><!-- d-flex text-nowrap -->
+            <div class="d-flex justify-content-between align-items-center w-100">
+              <div class="choose-course ">
+                <label><input type="radio" name="Discount courses" checked><span class="btn btn-primary mybtn action">所有程式</span></label>
+                <label><input type="radio" name="Discount courses"><span class="btn btn-primary mybtn">網頁開發</span></label>
+                <label><input type="radio" name="Discount courses"><span class="btn btn-primary mybtn">資料科學</span></label>
+                <label><input type="radio" name="Discount courses"><span class="btn btn-primary mybtn">遊戲開發</span></label>
+                <label><input type="radio" name="Discount courses"><span class="btn btn-primary mybtn">程式語言</span></label>
+                <label><input type="radio" name="Discount courses"><span class="btn btn-primary mybtn">遊戲開發</span></label>
+                <label><input type="radio" name="Discount courses"><span class="btn btn-primary mybtn">資料庫設計與開發</span></label>
+                <label><input type="radio" name="Discount courses"><span class="btn btn-primary mybtn">軟體測試</span></label>
+                <label><input type="radio" name="Discount courses"><span class="btn btn-primary mybtn">軟體開發工具</span></label>
+                <label><input type="radio" name="Discount courses"><span class="btn btn-primary mybtn">無程式碼開發</span></label>
+                <label><input type="radio" name="Discount courses"><span class="btn btn-primary mybtn">無程式碼開發</span></label>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="mycourselist0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <a href="#" class="action">最熱門</a>
+            <a href="#">最新課程</a>
+            <a href="#">話題最高</a>
+          </div>
+        </div>
+        <hr class="myhr">
+      </div>
+    </div>
+    <div class="section3 mycourselist1">
+      <div class="container">
+        <div class="swiper mySwiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-head" style="background: center /cover no-repeat url(../assets/images/course-5.png);">
+                  <span class="hot">限時 8 折 🔥</span>
+                </div>
+                <div class="card-body">
+                  <h6>小白也會！從零開始學習 Python 程式設計</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="teacher">
+                      <img class="teacher-img" src="../assets/images/avatar-2.png" alt="">
+                      <span class="teacher-name">Kelly Hsu</span>
+                    </div>
+                    <div class="price-box ">
+                      <span class="price">NT$ 2,480</span><span class="original-price">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-foot d-flex justify-content-between">
+                  <div class="d-flex justify-content-center align-items-start flex-column">
+                    <span class="tag">程式開發</span><span>已有 420 位同學加入</span>
+                  </div>
+                  <div class="evaluatebox">
+                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                      class="evaluate-num">(333)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-head" style="background: center /cover no-repeat url(../assets/images/course-6.png);">
+                  <span class="hot">限時 8 折 🔥</span>
+                </div>
+                <div class="card-body">
+                  <h6>全面掌握 JavaScript 開發技術</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="teacher">
+                      <img class="teacher-img" src="../assets/images/avatar-2.png" alt="">
+                      <span class="teacher-name">Kelly Hsu</span>
+                    </div>
+                    <div class="price-box ">
+                      <span class="price">NT$ 2,480</span><span class="original-price">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-foot d-flex justify-content-between">
+                  <div class="d-flex justify-content-center align-items-start flex-column">
+                    <span class="tag">程式開發</span><span>已有 420 位同學加入</span>
+                  </div>
+                  <div class="evaluatebox">
+                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                      class="evaluate-num">(333)</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-head" style="background: center /cover no-repeat url(../assets/images/course-7.png);">
+                </div>
+                <div class="card-body">
+                  <h6>HTML & CSS 網頁設計基礎教程</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="teacher">
+                      <img class="teacher-img" src="../assets/images/avatar-2.png" alt="">
+                      <span class="teacher-name">Kelly Hsu</span>
+                    </div>
+                    <div class="price-box ">
+                      <span class="price">NT$ 2,480</span><span class="original-price">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-foot d-flex justify-content-between">
+                  <div class="d-flex justify-content-center align-items-start flex-column">
+                    <span class="tag">程式開發</span><span>已有 420 位同學加入</span>
+                  </div>
+                  <div class="evaluatebox">
+                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                      class="evaluate-num">(333)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-head" style="background: center /cover no-repeat url(../assets/images/course-8.png);">
+                </div>
+                <div class="card-body">
+                  <h6>更進一步！深入學習 Node.js 與後端開發</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="teacher">
+                      <img class="teacher-img" src="../assets/images/avatar-2.png" alt="">
+                      <span class="teacher-name">Kelly Hsu</span>
+                    </div>
+                    <div class="price-box ">
+                      <span class="price">NT$ 2,480</span><span class="original-price">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-foot d-flex justify-content-between">
+                  <div class="d-flex justify-content-center align-items-start flex-column">
+                    <span class="tag">程式開發</span><span>已有 420 位同學加入</span>
+                  </div>
+                  <div class="evaluatebox">
+                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                      class="evaluate-num">(333)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-next2">
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </div>
+          <div class="swiper-prev2">
+            <span class="material-symbols-outlined">arrow_back</span>
+          </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+          var swiper = new Swiper(".mySwiper2", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            breakpoints: {
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+              },
+              991: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+              1400: {
+                navigation: {
+                  nextEl: ".swiper-next2",
+                  prevEl: ".swiper-prev2",
+                },
+                slidesPerView: 4,
+                spaceBetween: 40,
+              }
+            },
+          });
+        </script>
+      </div>
+      <div class="container">
+        <div class="swiper mySwiper5">
+          <div class="row" style="margin-bottom: 20px;">
+            <div class="col">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h3>熱門主題</h3>
+                </div>
+                <div class="d-flex">
+                  <div class="swiper-prev5" aria-disabled="ture">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                  </div>
+                  <div class="swiper-next5" aria-disabled="ture">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <h6>HTML 5</h6>
+                <p>2,103 個課程</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <h6>Javascript</h6>
+                <p>891 個課程</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <h6>Python</h6>
+                <p>1,384 個課程</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <h6>CSS 3</h6>
+                <p>240 個課程</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <h6>HTML 5</h6>
+                <p>2,103 個課程</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <h6>HTML 5</h6>
+                <p>2,103 個課程</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination5"></div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+          var swiper = new Swiper(".mySwiper5", {
+            slidesPerView: 2,
+            spaceBetween: 40,
+            navigation: {
+              nextEl: ".swiper-next5",
+              prevEl: ".swiper-prev5",
+            },
+            pagination: {
+              el: ".swiper-pagination5",
+              clickable: true,
+            },
+            breakpoints: {
+              640: {
+                slidesPerView: 2,
+              },
+              768: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+              },
+              1200: {
+                slidesPerView: 6,
+                navigation: {
+                  nextEl: ".swiper-next5",
+                  prevEl: ".swiper-prev5",
+                },
+              },
+            },
+          });
+        </script>
+
+      </div>
+    </div>
+    <div class="mycourselist2">
+      <div class="container">
+        <h2 class="text-center">程式頂尖講師</h2>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-xl-3">
+            <div class="card">
+              <div class="card-head" style="background-image: url(../assets/images/teacher-4.png);"></div>
+              <div class="card-body">
+                <p class="title">Devon Lane</p>
+                <p class="body14">自由接案工程師</p>
+              </div>
+              <div class="card-foot d-flex justify-content-between">
+                <div class="d-flex justify-content-center align-items-start flex-column">
+                  <span>3,394 個學生</span>
+                </div>
+                <div class="evaluatebox">
+                  <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                    class="evaluate-num">(333)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-xl-3">
+            <div class="card">
+              <div class="card-head" style="background-image: url(../assets/images/teacher-5.png);"></div>
+              <div class="card-body">
+                <p class="title">Jenny Cooper</p>
+                <p class="body14">資深全端工程師</p>
+              </div>
+              <div class="card-foot d-flex justify-content-between">
+                <div class="d-flex justify-content-center align-items-start flex-column">
+                  <span>3,394 個學生</span>
+                </div>
+                <div class="evaluatebox">
+                  <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                    class="evaluate-num">(333)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-xl-3">
+            <div class="card">
+              <div class="card-head" style="background-image: url(../assets/images/teacher-6.png);"></div>
+              <div class="card-body">
+                <p class="title">Johnny Khan</p>
+                <p class="body14">矽谷軟體工程師</p>
+              </div>
+              <div class="card-foot d-flex justify-content-between">
+                <div class="d-flex justify-content-center align-items-start flex-column">
+                  <span>3,394 個學生</span>
+                </div>
+                <div class="evaluatebox">
+                  <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                    class="evaluate-num">(333)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-xl-3">
+            <div class="card">
+              <div class="card-head" style="background-image: url(../assets/images/teacher-7.png);"></div>
+              <div class="card-body">
+                <p class="title">Annie Lin</p>
+                <p class="body14">資深前端工程師</p>
+              </div>
+              <div class="card-foot d-flex justify-content-between">
+                <div class="d-flex justify-content-center align-items-start flex-column">
+                  <span>3,394 個學生</span>
+                </div>
+                <div class="evaluatebox">
+                  <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                    class="evaluate-num">(333)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mycourselist3">
+      <div class="container">
+        <div class="d-flex flex-column flex-lg-row ">
+          <div>
+            <h3><span>查看 520 筆與「</span><a href="#">程式開發</a><span>」的相關課程</span></h3>
+          </div>
+          <div>
+            <a href="#">最新課程</a><a class="action" href="#">最高人氣</a><a href="#">最低價格</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-xxl-3">
+            <div class="card d-flex flex-row flex-md-column ">
+              <div class="card-head align-self-start"
+                style="background: center /cover no-repeat url(../assets/images/course-5.png);">
+                <span class="hot"><span class="d-none d-md-inline-block">限時 </span><span class="d-inline-block">8
+                    折</span><span class="d-none d-md-inline-block"> 🔥</span></span>
+              </div>
+              <div class=" ">
+                <div class="card-body">
+                  <h6>小白也會！從零開始學習 Python 程式設計</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="teacher">
+                      <img class="teacher-img" src="../assets/images/avatar-2.png" alt="">
+                      <span class="teacher-name">Kelly Hsu</span>
+                    </div>
+                    <div class="price-box ">
+                      <span class="price">NT$ 2,480</span><span class="original-price">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-foot d-flex justify-content-between">
+                  <div class="d-flex justify-content-center align-items-start flex-column">
+                    <span class="tag">程式開發</span><span>已有 420 位同學加入</span>
+                  </div>
+                  <div class="evaluatebox">
+                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                      class="evaluate-num">(333)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xxl-3">
+            <div class="card d-flex flex-row flex-md-column ">
+              <div class="card-head align-self-start"
+                style="background: center /cover no-repeat url(../assets/images/course-5.png);">
+                <span class="hot"><span class="d-none d-md-inline-block">限時 </span><span class="d-inline-block">8
+                    折</span><span class="d-none d-md-inline-block"> 🔥</span></span>
+              </div>
+              <div class=" ">
+                <div class="card-body">
+                  <h6>小白也會！從零開始學習 Python 程式設計</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="teacher">
+                      <img class="teacher-img" src="../assets/images/avatar-2.png" alt="">
+                      <span class="teacher-name">Kelly Hsu</span>
+                    </div>
+                    <div class="price-box ">
+                      <span class="price">NT$ 2,480</span><span class="original-price">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-foot d-flex justify-content-between">
+                  <div class="d-flex justify-content-center align-items-start flex-column">
+                    <span class="tag">程式開發</span><span>已有 420 位同學加入</span>
+                  </div>
+                  <div class="evaluatebox">
+                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                      class="evaluate-num">(333)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xxl-3">
+            <div class="card d-flex flex-row flex-md-column ">
+              <div class="card-head align-self-start"
+                style="background: center /cover no-repeat url(../assets/images/course-5.png);">
+                <span class="hot"><span class="d-none d-md-inline-block">限時 </span><span class="d-inline-block">8
+                    折</span><span class="d-none d-md-inline-block"> 🔥</span></span>
+              </div>
+              <div class=" ">
+                <div class="card-body">
+                  <h6>小白也會！從零開始學習 Python 程式設計</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="teacher">
+                      <img class="teacher-img" src="../assets/images/avatar-2.png" alt="">
+                      <span class="teacher-name">Kelly Hsu</span>
+                    </div>
+                    <div class="price-box ">
+                      <span class="price">NT$ 2,480</span><span class="original-price">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-foot d-flex justify-content-between">
+                  <div class="d-flex justify-content-center align-items-start flex-column">
+                    <span class="tag">程式開發</span><span>已有 420 位同學加入</span>
+                  </div>
+                  <div class="evaluatebox">
+                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                      class="evaluate-num">(333)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xxl-3">
+            <div class="card d-flex flex-row flex-md-column ">
+              <div class="card-head align-self-start"
+                style="background: center /cover no-repeat url(../assets/images/course-5.png);">
+              </div>
+              <div class=" ">
+                <div class="card-body">
+                  <h6>小白也會！從零開始學習 Python 程式設計</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="teacher">
+                      <img class="teacher-img" src="../assets/images/avatar-2.png" alt="">
+                      <span class="teacher-name">Kelly Hsu</span>
+                    </div>
+                    <div class="price-box ">
+                      <span class="price">NT$ 2,480</span><span class="original-price">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-foot d-flex justify-content-between">
+                  <div class="d-flex justify-content-center align-items-start flex-column">
+                    <span class="tag">程式開發</span><span>已有 420 位同學加入</span>
+                  </div>
+                  <div class="evaluatebox">
+                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                      class="evaluate-num">(333)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xxl-3">
+            <div class="card d-flex flex-row flex-md-column ">
+              <div class="card-head align-self-start"
+                style="background: center /cover no-repeat url(../assets/images/course-5.png);">
+              </div>
+              <div class=" ">
+                <div class="card-body">
+                  <h6>小白也會！從零開始學習 Python 程式設計</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="teacher">
+                      <img class="teacher-img" src="../assets/images/avatar-2.png" alt="">
+                      <span class="teacher-name">Kelly Hsu</span>
+                    </div>
+                    <div class="price-box ">
+                      <span class="price">NT$ 2,480</span><span class="original-price">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-foot d-flex justify-content-between">
+                  <div class="d-flex justify-content-center align-items-start flex-column">
+                    <span class="tag">程式開發</span><span>已有 420 位同學加入</span>
+                  </div>
+                  <div class="evaluatebox">
+                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                      class="evaluate-num">(333)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xxl-3">
+            <div class="card d-flex flex-row flex-md-column ">
+              <div class="card-head align-self-start"
+                style="background: center /cover no-repeat url(../assets/images/course-5.png);">
+              </div>
+              <div class=" ">
+                <div class="card-body">
+                  <h6>小白也會！從零開始學習 Python 程式設計</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="teacher">
+                      <img class="teacher-img" src="../assets/images/avatar-2.png" alt="">
+                      <span class="teacher-name">Kelly Hsu</span>
+                    </div>
+                    <div class="price-box ">
+                      <span class="price">NT$ 2,480</span><span class="original-price">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-foot d-flex justify-content-between">
+                  <div class="d-flex justify-content-center align-items-start flex-column">
+                    <span class="tag">程式開發</span><span>已有 420 位同學加入</span>
+                  </div>
+                  <div class="evaluatebox">
+                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                      class="evaluate-num">(333)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xxl-3">
+            <div class="card d-flex flex-row flex-md-column ">
+              <div class="card-head align-self-start"
+                style="background: center /cover no-repeat url(../assets/images/course-5.png);">
+              </div>
+              <div class=" ">
+                <div class="card-body">
+                  <h6>小白也會！從零開始學習 Python 程式設計</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="teacher">
+                      <img class="teacher-img" src="../assets/images/avatar-2.png" alt="">
+                      <span class="teacher-name">Kelly Hsu</span>
+                    </div>
+                    <div class="price-box ">
+                      <span class="price">NT$ 2,480</span><span class="original-price">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-foot d-flex justify-content-between">
+                  <div class="d-flex justify-content-center align-items-start flex-column">
+                    <span class="tag">程式開發</span><span>已有 420 位同學加入</span>
+                  </div>
+                  <div class="evaluatebox">
+                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                      class="evaluate-num">(333)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xxl-3">
+            <div class="card d-flex flex-row flex-md-column ">
+              <div class="card-head align-self-start"
+                style="background: center /cover no-repeat url(../assets/images/course-5.png);">
+              </div>
+              <div class=" ">
+                <div class="card-body">
+                  <h6>小白也會！從零開始學習 Python 程式設計</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="teacher">
+                      <img class="teacher-img" src="../assets/images/avatar-2.png" alt="">
+                      <span class="teacher-name">Kelly Hsu</span>
+                    </div>
+                    <div class="price-box ">
+                      <span class="price">NT$ 2,480</span><span class="original-price">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-foot d-flex justify-content-between">
+                  <div class="d-flex justify-content-center align-items-start flex-column">
+                    <span class="tag">程式開發</span><span>已有 420 位同學加入</span>
+                  </div>
+                  <div class="evaluatebox">
+                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                      class="evaluate-num">(333)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xxl-3">
+            <div class="card d-flex flex-row flex-md-column ">
+              <div class="card-head align-self-start"
+                style="background: center /cover no-repeat url(../assets/images/course-5.png);">
+              </div>
+              <div class=" ">
+                <div class="card-body">
+                  <h6>小白也會！從零開始學習 Python 程式設計</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="teacher">
+                      <img class="teacher-img" src="../assets/images/avatar-2.png" alt="">
+                      <span class="teacher-name">Kelly Hsu</span>
+                    </div>
+                    <div class="price-box ">
+                      <span class="price">NT$ 2,480</span><span class="original-price">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-foot d-flex justify-content-between">
+                  <div class="d-flex justify-content-center align-items-start flex-column">
+                    <span class="tag">程式開發</span><span>已有 420 位同學加入</span>
+                  </div>
+                  <div class="evaluatebox">
+                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                      class="evaluate-num">(333)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xxl-3">
+            <div class="card d-flex flex-row flex-md-column ">
+              <div class="card-head align-self-start"
+                style="background: center /cover no-repeat url(../assets/images/course-5.png);">
+              </div>
+              <div class=" ">
+                <div class="card-body">
+                  <h6>小白也會！從零開始學習 Python 程式設計</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="teacher">
+                      <img class="teacher-img" src="../assets/images/avatar-2.png" alt="">
+                      <span class="teacher-name">Kelly Hsu</span>
+                    </div>
+                    <div class="price-box ">
+                      <span class="price">NT$ 2,480</span><span class="original-price">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-foot d-flex justify-content-between">
+                  <div class="d-flex justify-content-center align-items-start flex-column">
+                    <span class="tag">程式開發</span><span>已有 420 位同學加入</span>
+                  </div>
+                  <div class="evaluatebox">
+                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                      class="evaluate-num">(333)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xxl-3">
+            <div class="card d-flex flex-row flex-md-column ">
+              <div class="card-head align-self-start"
+                style="background: center /cover no-repeat url(../assets/images/course-5.png);">
+              </div>
+              <div class=" ">
+                <div class="card-body">
+                  <h6>小白也會！從零開始學習 Python 程式設計</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="teacher">
+                      <img class="teacher-img" src="../assets/images/avatar-2.png" alt="">
+                      <span class="teacher-name">Kelly Hsu</span>
+                    </div>
+                    <div class="price-box ">
+                      <span class="price">NT$ 2,480</span><span class="original-price">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-foot d-flex justify-content-between">
+                  <div class="d-flex justify-content-center align-items-start flex-column">
+                    <span class="tag">程式開發</span><span>已有 420 位同學加入</span>
+                  </div>
+                  <div class="evaluatebox">
+                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                      class="evaluate-num">(333)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xxl-3">
+            <div class="card d-flex flex-row flex-md-column ">
+              <div class="card-head align-self-start"
+                style="background: center /cover no-repeat url(../assets/images/course-5.png);">
+              </div>
+              <div class=" ">
+                <div class="card-body">
+                  <h6>小白也會！從零開始學習 Python 程式設計</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="teacher">
+                      <img class="teacher-img" src="../assets/images/avatar-2.png" alt="">
+                      <span class="teacher-name">Kelly Hsu</span>
+                    </div>
+                    <div class="price-box ">
+                      <span class="price">NT$ 2,480</span><span class="original-price">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-foot d-flex justify-content-between">
+                  <div class="d-flex justify-content-center align-items-start flex-column">
+                    <span class="tag">程式開發</span><span>已有 420 位同學加入</span>
+                  </div>
+                  <div class="evaluatebox">
+                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                      class="evaluate-num">(333)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xxl-3">
+            <div class="card d-flex flex-row flex-md-column ">
+              <div class="card-head align-self-start"
+                style="background: center /cover no-repeat url(../assets/images/course-5.png);">
+              </div>
+              <div class=" ">
+                <div class="card-body">
+                  <h6>小白也會！從零開始學習 Python 程式設計</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="teacher">
+                      <img class="teacher-img" src="../assets/images/avatar-2.png" alt="">
+                      <span class="teacher-name">Kelly Hsu</span>
+                    </div>
+                    <div class="price-box ">
+                      <span class="price">NT$ 2,480</span><span class="original-price">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-foot d-flex justify-content-between">
+                  <div class="d-flex justify-content-center align-items-start flex-column">
+                    <span class="tag">程式開發</span><span>已有 420 位同學加入</span>
+                  </div>
+                  <div class="evaluatebox">
+                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                      class="evaluate-num">(333)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xxl-3">
+            <div class="card d-flex flex-row flex-md-column ">
+              <div class="card-head align-self-start"
+                style="background: center /cover no-repeat url(../assets/images/course-5.png);">
+              </div>
+              <div class=" ">
+                <div class="card-body">
+                  <h6>小白也會！從零開始學習 Python 程式設計</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="teacher">
+                      <img class="teacher-img" src="../assets/images/avatar-2.png" alt="">
+                      <span class="teacher-name">Kelly Hsu</span>
+                    </div>
+                    <div class="price-box ">
+                      <span class="price">NT$ 2,480</span><span class="original-price">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-foot d-flex justify-content-between">
+                  <div class="d-flex justify-content-center align-items-start flex-column">
+                    <span class="tag">程式開發</span><span>已有 420 位同學加入</span>
+                  </div>
+                  <div class="evaluatebox">
+                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                      class="evaluate-num">(333)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xxl-3">
+            <div class="card d-flex flex-row flex-md-column ">
+              <div class="card-head align-self-start"
+                style="background: center /cover no-repeat url(../assets/images/course-5.png);">
+              </div>
+              <div class=" ">
+                <div class="card-body">
+                  <h6>小白也會！從零開始學習 Python 程式設計</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="teacher">
+                      <img class="teacher-img" src="../assets/images/avatar-2.png" alt="">
+                      <span class="teacher-name">Kelly Hsu</span>
+                    </div>
+                    <div class="price-box ">
+                      <span class="price">NT$ 2,480</span><span class="original-price">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-foot d-flex justify-content-between">
+                  <div class="d-flex justify-content-center align-items-start flex-column">
+                    <span class="tag">程式開發</span><span>已有 420 位同學加入</span>
+                  </div>
+                  <div class="evaluatebox">
+                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                      class="evaluate-num">(333)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xxl-3">
+            <div class="card d-flex flex-row flex-md-column ">
+              <div class="card-head align-self-start"
+                style="background: center /cover no-repeat url(../assets/images/course-5.png);">
+              </div>
+              <div class=" ">
+                <div class="card-body">
+                  <h6>小白也會！從零開始學習 Python 程式設計</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="teacher">
+                      <img class="teacher-img" src="../assets/images/avatar-2.png" alt="">
+                      <span class="teacher-name">Kelly Hsu</span>
+                    </div>
+                    <div class="price-box ">
+                      <span class="price">NT$ 2,480</span><span class="original-price">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-foot d-flex justify-content-between">
+                  <div class="d-flex justify-content-center align-items-start flex-column">
+                    <span class="tag">程式開發</span><span>已有 420 位同學加入</span>
+                  </div>
+                  <div class="evaluatebox">
+                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                      class="evaluate-num">(333)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xxl-3">
+            <div class="card d-flex flex-row flex-md-column ">
+              <div class="card-head align-self-start"
+                style="background: center /cover no-repeat url(../assets/images/course-5.png);">
+              </div>
+              <div class=" ">
+                <div class="card-body">
+                  <h6>小白也會！從零開始學習 Python 程式設計</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="teacher">
+                      <img class="teacher-img" src="../assets/images/avatar-2.png" alt="">
+                      <span class="teacher-name">Kelly Hsu</span>
+                    </div>
+                    <div class="price-box ">
+                      <span class="price">NT$ 2,480</span><span class="original-price">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-foot d-flex justify-content-between">
+                  <div class="d-flex justify-content-center align-items-start flex-column">
+                    <span class="tag">程式開發</span><span>已有 420 位同學加入</span>
+                  </div>
+                  <div class="evaluatebox">
+                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                      class="evaluate-num">(333)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xxl-3">
+            <div class="card d-flex flex-row flex-md-column ">
+              <div class="card-head align-self-start"
+                style="background: center /cover no-repeat url(../assets/images/course-5.png);">
+              </div>
+              <div class=" ">
+                <div class="card-body">
+                  <h6>小白也會！從零開始學習 Python 程式設計</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="teacher">
+                      <img class="teacher-img" src="../assets/images/avatar-2.png" alt="">
+                      <span class="teacher-name">Kelly Hsu</span>
+                    </div>
+                    <div class="price-box ">
+                      <span class="price">NT$ 2,480</span><span class="original-price">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-foot d-flex justify-content-between">
+                  <div class="d-flex justify-content-center align-items-start flex-column">
+                    <span class="tag">程式開發</span><span>已有 420 位同學加入</span>
+                  </div>
+                  <div class="evaluatebox">
+                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                      class="evaluate-num">(333)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xxl-3">
+            <div class="card d-flex flex-row flex-md-column ">
+              <div class="card-head align-self-start"
+                style="background: center /cover no-repeat url(../assets/images/course-5.png);">
+              </div>
+              <div class=" ">
+                <div class="card-body">
+                  <h6>小白也會！從零開始學習 Python 程式設計</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="teacher">
+                      <img class="teacher-img" src="../assets/images/avatar-2.png" alt="">
+                      <span class="teacher-name">Kelly Hsu</span>
+                    </div>
+                    <div class="price-box ">
+                      <span class="price">NT$ 2,480</span><span class="original-price">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-foot d-flex justify-content-between">
+                  <div class="d-flex justify-content-center align-items-start flex-column">
+                    <span class="tag">程式開發</span><span>已有 420 位同學加入</span>
+                  </div>
+                  <div class="evaluatebox">
+                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                      class="evaluate-num">(333)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xxl-3">
+            <div class="card d-flex flex-row flex-md-column ">
+              <div class="card-head align-self-start"
+                style="background: center /cover no-repeat url(../assets/images/course-5.png);">
+              </div>
+              <div class=" ">
+                <div class="card-body">
+                  <h6>小白也會！從零開始學習 Python 程式設計</h6>
+                  <div class="d-flex justify-content-between">
+                    <div class="teacher">
+                      <img class="teacher-img" src="../assets/images/avatar-2.png" alt="">
+                      <span class="teacher-name">Kelly Hsu</span>
+                    </div>
+                    <div class="price-box ">
+                      <span class="price">NT$ 2,480</span><span class="original-price">NT$ 3,200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-foot d-flex justify-content-between">
+                  <div class="d-flex justify-content-center align-items-start flex-column">
+                    <span class="tag">程式開發</span><span>已有 420 位同學加入</span>
+                  </div>
+                  <div class="evaluatebox">
+                    <span class="font-icon material-symbols-outlined">star</span><span class="evaluate">4.0</span><span
+                      class="evaluate-num">(333)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav aria-label="Page navigation">
+          <ul class="pagination justify-content-center justify-content-md-end">
+            <li class=" page-item  disabled">
+              <a class="btn btn-pimary page-link" href="#" aria-label="Previous" tabindex="-1" aria-disabled="true">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item  disabled">
+              <a class="btn btn-pimary page-link" href="#">&lt;</a>
+            </li>
+            <li class="page-item action" aria-current="page"><a class="page-link btn btn-pimary action" href="#">1</a>
+            </li>
+            <li class="page-item"><a class="page-link btn btn-pimary " href="#">2</a></li>
+            <!-- <li class="page-item"><a class="page-link btn btn-pimary " href="#">3</a></li> -->
+            <li class="page-item"><a class="page-link btn btn-pimary " href="#">...</a></li>
+            <li class="page-item"><a class="page-link btn btn-pimary " href="#">10</a></li>
+            <li class="page-item">
+              <a class="page-link btn btn-pimary " href="#">&gt;</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link btn btn-pimary " href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="section4">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-12 col-xl-6">
+            <div class="swiper mySwiper3">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div style="background-color: #FF994F;"><img class="img-fluid"
+                        src="../assets/images/icons/megaphoneSimple.png" alt=""></div>
+                    <div class="d-flex flex-column justify-content-between">
+                      <div>網路行銷</div>
+                      <div>342 門課程</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div style="background-color: #5E5E5E;"><img class="img-fluid"
+                        src="../assets/images/icons/camera.png" alt=""></div>
+                    <div class="d-flex flex-column justify-content-between">
+                      <div>拍攝剪輯</div>
+                      <div>563 門課程</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div style="background-color: #FF9BAD;"><img class="img-fluid"
+                        src="../assets/images/icons/chartBarHorizontal.png" alt=""></div>
+                    <div class="d-flex flex-column justify-content-between">
+                      <div>自我成長</div>
+                      <div>490 門課程</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div style="background-color: #564FFD;"><img class="img-fluid"
+                        src="../assets/images/icons/penNib.png" alt=""></div>
+                    <div class="d-flex flex-column justify-content-between">
+                      <div>藝術設計</div>
+                      <div>230 門課程</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div style="background-color: #54DFF2;"><img class="img-fluid"
+                        src="../assets/images/icons/bugDroid.png" alt=""></div>
+                    <div class="d-flex flex-column justify-content-between">
+                      <div>數據分析</div>
+                      <div>395 門課程</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div style="background-color: #52E9BC;"><img class="img-fluid"
+                        src="../assets/images/icons/creditCard.png" alt=""></div>
+                    <div class="d-flex flex-column justify-content-between">
+                      <div>投資理財</div>
+                      <div>486 門課程</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div style="background-color: #CF93FF;"><img class="img-fluid"
+                        src="../assets/images/icons/headphones.png" alt=""></div>
+                    <div class="d-flex flex-column justify-content-between">
+                      <div>音樂創作</div>
+                      <div>283 門課程</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div style="background-color: #0068FF;padding: 20px;"><img class="img-fluid"
+                        src="../assets/images/icons/arrow.png" alt=""></div>
+                    <div class="d-flex flex-column justify-content-center">
+                      <div>探索更多</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          <script>
+            var swiper = new Swiper(".mySwiper3", {
+
+              slidesPerView: 1,
+              grid: {
+                rows: 2,
+                fill: 'row',
+              },
+              spaceBetween: 30,
+              breakpoints: {
+                567: {
+                  slidesPerView: 2,
+                  grid: {
+                    rows: 2,
+                    fill: 'row',
+                  },
+                },
+                768: {
+                  slidesPerView: 2,
+                  grid: {
+                    rows: 4,
+                    fill: 'row',
+                  },
+                },
+              },
+            });
+          </script>
+          <div class="col-12 col-xl-5" style="margin-bottom: 16px;">
+            <div><img src="../assets/images/deco/polygon-1.png" alt=""></div>
+            <div>
+              <h1>想學什麼嗎？<br>一探究竟。</h1>
+              <img class="img-fluid" src="../assets/images/deco/line-2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include('./layout/footer'); -%>
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>
